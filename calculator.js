@@ -78,17 +78,17 @@ function init(){
     }
     
 }
-
-
-
-
 const titles = [
-    "C", "Ca", "Cal", "Calc", "Calcu","Calcul","Calcula","Calculat","Calculato", "Calculator"
-  ]
+  "C", "Ca", "Cal", "Calc", "Calcu","Calcul","Calcula","Calculat","Calculato", "Calculator"
+]
 function changeTitles(titles){
-  let ii = 0
-  return (function update() {
-    document.querySelector('title').textContent = titles[(ii++ % titles.length)]
-    setTimeout(update, 600)
-  })()
+let ii = 0
+return (function update() {
+  document.querySelector('title').textContent = titles[(ii++ % titles.length)]
+  setTimeout(update, 600)
+})()
 }
+
+
+
+
