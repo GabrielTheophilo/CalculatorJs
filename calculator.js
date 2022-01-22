@@ -30,16 +30,20 @@ function init(){
     
     btnMaker("C",clrOutput);
     btnMaker("=",evalOutput);
+    
+    function cOutput(v){
+      output.style.border = v + '1px solid';
+      output.style.color = v;
+    }
 
     function evalOutput(){
-      output.style.border = 'black 1px solid';
+      cOutput('black');
       console.log('=');
       if(output.value===""){
-        output.style.border = 'red 1px solid';
+        cOutput('red');
       }else{
         output.value = eval(output.value);
       }
-
     }
     function clrOutput(){
         output.value = "";
@@ -63,7 +67,7 @@ function init(){
       if(char == '.'){
         if(dec){
           char = '';
-          output.style.border = 'red 1px solid';
+          cOutput('red');
         }else{
           dec = true;
         }
@@ -73,7 +77,7 @@ function init(){
         dec = false;
       }
       output.value += char;
-      output.style.border = 'black 1px solid';
+      cOutput('black');
       
     }
     
@@ -88,7 +92,3 @@ return (function update() {
   setTimeout(update, 600)
 })()
 }
-
-
-
-
