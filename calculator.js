@@ -13,6 +13,7 @@ function init(){
     container.style.margin = 'auto';
     document.body.appendChild(container);
     const output = document.createElement('input');
+    output.setAttribute('id','output');
     output.setAttribute('type','text');
     output.classList.add('output');
     output.style.width = '80%';
@@ -27,7 +28,7 @@ function init(){
     opt.forEach(function(val){
       btnMaker(val, addOutput);
     })
-    
+    btnMaker("←", delOutput);
     btnMaker("C",clrOutput);
     btnMaker("=",evalOutput);
     
@@ -47,6 +48,10 @@ function init(){
     }
     function clrOutput(){
         output.value = "";
+    }
+    function delOutput(){
+      var value = document.getElementById('output').value;
+      document.getElementById('output').value = value.substr(0, value.length -1);
     }
     function btnMaker(txt, myFunction){
       let btn = document.createElement('button');
