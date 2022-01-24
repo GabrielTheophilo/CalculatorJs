@@ -19,6 +19,7 @@ button#botoes {
 
 input {
     border-radius: 25px;
+    box-shadow: 2px 2px grey;
 }
 
 .button-6 {

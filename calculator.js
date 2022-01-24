@@ -26,6 +26,7 @@ function init(){
     main.classList.add('main');
     main.style.width = '100%';
     container.appendChild(main);
+    btnMaker("C",clrOutput, "clear");
     optTec.forEach(function(val){
       btnMaker(val, addOutput, "botoes");
     })
@@ -33,8 +34,8 @@ function init(){
       btnMaker(val, addOutput, "numeros");
     })
     btnMaker("←", delOutput, "delete");
-    btnMaker("C",clrOutput, "clear");
     btnMaker("=",evalOutput, "sum");
+    
     
     function cOutput(v){
       output.style.border = v + '1px solid';
