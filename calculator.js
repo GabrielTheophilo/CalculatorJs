@@ -10,7 +10,7 @@ function init(){
     console.log('ready');
     const container = document.createElement('div');
     container.classList.add('container');
-    container.style.maxWidth = '600px';
+    container.style.maxWidth = '800px';
     container.style.margin = 'auto';
     document.body.appendChild(container);
     const output = document.createElement('input');
