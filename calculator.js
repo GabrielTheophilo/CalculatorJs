@@ -60,6 +60,8 @@ function init(){
     function btnMaker(txt, myFunction, id){
       let btn = document.createElement('button');
       btn.setAttribute('type', 'button');
+      btn.setAttribute('class', 'button-6');
+      btn.setAttribute('role', 'button');
       btn.setAttribute('id', id);
       btn.style.width = '25%';
       btn.style.lineHeight = '50px';
