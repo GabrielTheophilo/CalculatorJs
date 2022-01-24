@@ -1,0 +1,18 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+button#numeros {
+    background-color: #4672B9; /* Green */
+  }
+button#sum {
+    background-color: #6B8EC7;
+}
+button#clear {
+    background-color: #4672B9;
+}
+button#delete {
+    background-color: #6B8EC7;
+}
+button#botoes {
+    background-color: #EAEC46;
+}

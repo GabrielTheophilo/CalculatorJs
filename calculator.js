@@ -1,6 +1,7 @@
 
 window.addEventListener('DOMContentLoaded',init);
-const opt = ['*','/','+','-','9','8','7','6','5','4','3','2','1','0','.'];
+const optTec = ['*','/','+','-'];
+const opt = ['9','8','7','6','5','4','3','2','1','0','.'];
 const spec = ['*','/','+','-',];
 function init(){
     let dec = false;
@@ -25,12 +26,15 @@ function init(){
     main.classList.add('main');
     main.style.width = '100%';
     container.appendChild(main);
-    opt.forEach(function(val){
-      btnMaker(val, addOutput);
+    optTec.forEach(function(val){
+      btnMaker(val, addOutput, "botoes");
     })
-    btnMaker("←", delOutput);
-    btnMaker("C",clrOutput);
-    btnMaker("=",evalOutput);
+    opt.forEach(function(val){
+      btnMaker(val, addOutput, "numeros");
+    })
+    btnMaker("←", delOutput, "delete");
+    btnMaker("C",clrOutput, "clear");
+    btnMaker("=",evalOutput, "sum");
     
     function cOutput(v){
       output.style.border = v + '1px solid';
@@ -53,9 +57,10 @@ function init(){
       var value = document.getElementById('output').value;
       document.getElementById('output').value = value.substr(0, value.length -1);
     }
-    function btnMaker(txt, myFunction){
+    function btnMaker(txt, myFunction, id){
       let btn = document.createElement('button');
       btn.setAttribute('type', 'button');
+      btn.setAttribute('id', id);
       btn.style.width = '25%';
       btn.style.lineHeight = '50px';
       btn.style.margin = '1%';
