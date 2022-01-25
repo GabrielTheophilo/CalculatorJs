@@ -7,7 +7,6 @@ function init(){
     let dec = false;
     let eva = false;
     changeTitles(titles)
-    console.log('ready');
     const container = document.createElement('div');
     container.classList.add('container');
     container.style.maxWidth = '800px';
@@ -46,7 +45,7 @@ function init(){
 
     function evalOutput(){
       cOutput('black');
-      console.log('=');
+
       if(output.value===""){
         cOutput('red');
       }else{
@@ -76,8 +75,7 @@ function init(){
       main.appendChild(btn);
     }
     function addOutput(e){
-      console.log(dec);
-      console.log(e.target.val);
+    
       let char = e.target.val;
       if(char == '.'){
         if(dec){
