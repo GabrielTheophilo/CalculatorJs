@@ -11,13 +11,15 @@ function init(){
     const container = document.createElement('div');
     container.classList.add('container');
     container.style.maxWidth = '800px';
-    container.style.margin = '0';
+    container.style.margin = '5em';
+    
     document.body.appendChild(container);
     const output = document.createElement('input');
     output.setAttribute('id','output');
     output.setAttribute('type','text');
     output.classList.add('output');
-    output.style.width = '80%';
+    
+    output.style.width = '100%';
     output.lineHeight = '50px';
     output.style.fontSize = '3em';
     output.style.textAlign = 'right';
@@ -64,7 +66,7 @@ function init(){
       btn.setAttribute('class', 'button-6');
       btn.setAttribute('role', 'button');
       btn.setAttribute('id', id);
-      btn.style.width = '25%';
+      btn.style.width = '31%';
       btn.style.lineHeight = '50px';
       btn.style.margin = '1%';
       btn.style.fontSize = '2em';

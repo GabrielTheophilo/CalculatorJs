@@ -2,6 +2,11 @@
   font-family: 'PressStart';
   src: url("assets/PressStart2P-Regular.ttf");
 }
+input {
+    font-family: 'PressStart';
+    font-weight: 100;
+    font-size: 1em;
+}
 
 button#numeros {
     background-color: #4672B9;
@@ -23,6 +28,10 @@ button#botoes {
 input {
     border-radius: 25px;
     box-shadow: 2px 2px grey;
+}
+
+div.main {
+  background-color: black;
 }
 
 .button-6 {
