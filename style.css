@@ -1,6 +1,8 @@
-* {
-    font-family: 'Source Sans Pro', sans-serif;
+@font-face {
+  font-family: 'PressStart';
+  src: url("assets/PressStart2P-Regular.ttf");
 }
+
 button#numeros {
     background-color: #4672B9;
     
@@ -33,9 +35,9 @@ input {
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: 'PressStart';
+  font-size: 10px;
+  font-weight: 500;
   justify-content: center;
   line-height: 1.25;
   margin: 0;
