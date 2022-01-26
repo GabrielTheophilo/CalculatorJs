@@ -10,8 +10,8 @@ function init(){
     const container = document.createElement('div');
     container.classList.add('container');
     container.style.maxWidth = '800px';
-    container.style.margin = '5em';
-    
+    container.style.margin = 'auto';
+    container.style.marginTop = '12%';  
     document.body.appendChild(container);
     const output = document.createElement('input');
     output.setAttribute('id','output');
