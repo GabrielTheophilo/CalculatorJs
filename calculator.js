@@ -22,6 +22,7 @@ function init(){
     output.lineHeight = '50px';
     output.style.fontSize = '3em';
     output.style.textAlign = 'right';
+    output.style.marginBottom = '15px';
     container.appendChild(output);
     const main = document.createElement('div');
     main.classList.add('main');
