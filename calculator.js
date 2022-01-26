@@ -11,7 +11,7 @@ function init(){
     container.classList.add('container');
     container.style.maxWidth = '800px';
     container.style.margin = 'auto';
-    container.style.marginTop = '12%';  
+    container.style.marginTop = '6%';  
     document.body.appendChild(container);
     const output = document.createElement('input');
     output.setAttribute('id','output');
