@@ -6,7 +6,10 @@ input {
     font-family: 'PressStart';
     font-weight: 100;
     font-size: 1em;
+    
 }
+
+
 
 button#numeros {
     background-color: #4672B9;
@@ -31,7 +34,11 @@ input {
 }
 
 div.main {
-  background-color: black;
+  background-color: rgb(216, 216, 216);
+}
+
+body {
+  background-color: rgb(216, 216, 216);
 }
 
 .button-6 {
